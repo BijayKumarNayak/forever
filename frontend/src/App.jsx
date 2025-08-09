@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
-import Order from "./pages/order";
+import Order from "./pages/Order";
 import Login from "./pages/Login";
 import PlaceOrder from "./pages/PlaceOrder";
 import Contact from "./pages/Contact";
