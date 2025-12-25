@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 
 export const ShopContext = createContext();
 
-const ShopContextProvider = (props) => {
+export const ShopContextProvider = (props) => {
   const currency = "$";
   const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
@@ -165,4 +165,3 @@ const ShopContextProvider = (props) => {
   );
 };
 
-export default ShopContextProvider;
