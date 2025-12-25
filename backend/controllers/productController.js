@@ -12,8 +12,7 @@ const addProduct = async (req, res) => {
       subCategory,
       bestseller,
     } = req.body;
-    // console.log("req.body", req.body);
-    // console.log("req.files", req.files);
+    const parsedBestseller = bestseller === "true" || bestseller === true;
     if (!name || !price || !description || !category) {
       return res.status(400).json({ message: "Please fill all fields" });
     }
@@ -52,7 +51,7 @@ const addProduct = async (req, res) => {
       category,
       price: Number(price),
       subCategory,
-      bestseller: bestseller === "true" ? true : false,
+      bestSeller: parsedBestseller,
       sizes: JSON.parse(sizes),
       image: imageUrl,
       date: Date.now(),
