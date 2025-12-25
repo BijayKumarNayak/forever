@@ -32,8 +32,8 @@ const Collection = () => {
   console.log(subCategory);
   const applyFilter = () => {
     let productCopy = products.slice();
-    // console.log(productCopy)
-    if (showSearch) {
+   
+    if (search) {
       productCopy = productCopy.filter((item) =>
         item.name.toLowerCase().includes(search.toLowerCase())
       );
