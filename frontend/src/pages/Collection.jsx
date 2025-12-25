@@ -33,7 +33,7 @@ const Collection = () => {
   const applyFilter = () => {
     let productCopy = products.slice();
     // console.log(productCopy)
-    if (showSearch && search) {
+    if (showSearch) {
       productCopy = productCopy.filter((item) =>
         item.name.toLowerCase().includes(search.toLowerCase())
       );
