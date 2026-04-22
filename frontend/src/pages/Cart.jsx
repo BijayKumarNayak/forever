@@ -47,7 +47,7 @@ const Cart = () => {
             <Title text1={"YOUR"} text2={"CART"} />
           </div>
           <div>
-            {cartData.map((item, index) => {
+            {cartData?.map((item, index) => {
               const productData = products.find(
                 (product) => product._id === item._id
               );
